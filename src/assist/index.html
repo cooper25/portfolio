@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="downloaded" rel="stylesheet" href="assist.css" type="text/css"/>
+        <script src="https://loertis.dev/assist/assist.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="notice"></header>                                                                                    
+        <header id="backgroundrgb"></header><br>
+        <div class="panel">
+            <h1><i id="name"></i> Help Desk</h1>
+            <h3><i id="operation"></i></h3>
+        </div><br><br><br><br>
+        <h4 align="center">What do you need help with?</h4>
+        <div id="padding27">
+            <div class="buttons">
+                <div class="panel3">
+                    <h2>ONE</h2>
+                </div>
+                <div id="margin1left" class="panel3">
+                    <h2>TWO</h2>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <h4 align="center">Contact Us:</h4>
+        <div id="padding27">
+            <div class="buttons">
+                <div onclick="one()" class="panel3">
+                    <h2>ONE</h2>
+                </div>
+                <div onclick="two()" id="margin1left" class="panel3">
+                    <h2>TWO</h2>
+                </div>
+            </div>
+            <div id="margin1top" class="buttons">
+                <div onclick="forum()" class="panel3">
+                    <h2>THREE</h2>
+                </div>
+                <div id="margin1left" onclick="forum()" class="panel3">
+                    <h2>FOUR</h2>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 5%;"></div>
+        <footer><i id="version">v1.0</i> | <i id="link">Opensource helpdesk</i> <i style="opacity: 75%;">made with ❤️ by loertis.</i></footer>
+    </body>
+    <script>
+        // CONFIGURATION
+        header_background_color = "" // Set to the *RGB* color you want, the default is warm gray; set to cancel if you want to upload a background image. (FORMAT "66, 135, 245")
+        header_background_image = "" // Set to the url or file path of the background image.
+        help_desk_name = "EDIT NAME" // Self explanatory
+        operations_mode = "Normal" // Normal = Operating Normal, Issues = Experiencing Issues, Maintenace = Under Maintenance, Down = Website Down.
+
+        // PROGRAMMING
+        var header_background_color;
+        var header_background_image;
+        var help_desk_name;
+        var operations_mode;
+        var operation = document.getElementById("operation")
+
+        if (!help_desk_name == "") {
+            document.getElementById("name").innerHTML = help_desk_name
+        }
+
+        if (!header_background_color == "") {
+            document.getElementById("backgroundrgb").style.backgroundColor = "rgb(" + header_background_color + ")"
+        }
+
+        if (!header_background_image == "") {
+            document.getElementById("backgroundrgb").style.backgroundImage = "url('" + header_background_image + "')"
+        }
+
+        if (operations_mode == "Normal") {
+            operation.innerHTML = "✔️ Operating Normal"
+        } else if (operations_mode == "Issues") {
+            operation.innerHTML = "💢 Experiencing Issues"
+        } else if (operations_mode == "Maintenance") {
+            operation.innerHTML = "🛠️ Under Maintenance"
+        } else if (operations_mode == "Down") {
+            operation.innerHTML = "🔻 Services Down"
+        } else {
+            operation.innerHTML = "⚠️ Incorrect Status Mode"
+        }
+    </script>
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #FFFD00;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+::selection {
+    background-color: unset;
+    color: unset;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font: 700 200% "PT Mono", sans-serif;
+}
+h2 {
+    margin: 0px;
+    padding: 0px;
+    font: 100 115% "Alata", sans-serif;
+}
+.social {
+    transition: .2s;
+    outline: none;
+    border: none;
+    display: inline;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5%;
+    opacity: 85%;
+}
+.social:hover {
+    opacity: 100%;
+}
+.github {
+    background-image: url(/assets/github.png);
+}
+.email {
+    background-image: url(/assets/email.png);
+}

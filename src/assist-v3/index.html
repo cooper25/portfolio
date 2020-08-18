@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/assist-v3/assist.js"></script>
+    </head>
+    <body id="body">
+        <header id="notice"></header>                                                                                    
+        <header id="backgroundrgb"></header><br>
+        <div class="panel">
+            <h1><i id="name"></i> Help Desk</h1>
+            <h3><i id="operation"></i></h3>
+        </div><br><br><br><br>
+        <h4 align="center">What do you need help with?</h4>
+        <div id="padding27">
+            <div class="buttons">
+                <div class="panel3">
+                    <h2>ONE</h2>
+                </div>
+                <div id="margin1left" class="panel3">
+                    <h2>TWO</h2>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <h4 align="center">Contact Us:</h4>
+        <div id="padding27">
+            <div class="buttons">
+                <div onclick="one()" class="panel3">
+                    <h2>ONE</h2>
+                </div>
+                <div onclick="two()" id="margin1left" class="panel3">
+                    <h2>TWO</h2>
+                </div>
+            </div>
+            <div id="margin1top" class="buttons">
+                <div onclick="forum()" class="panel3">
+                    <h2>THREE</h2>
+                </div>
+                <div id="margin1left" onclick="forum()" class="panel3">
+                    <h2>FOUR</h2>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 5%;"></div>
+    </body>
+    <script>
+        // Theme Configuration
+        HEADER_COLOR = "" // Any color you desire; leave blank if you want to use an image.
+        HEADER_BACKGROUND_IMAGE = "" // URL, or Path to the image.
+        BACKGROUND_COLOR = "rgb('200,200,200')" // Any color you desire.
+        FONT = "Hind Madurai" // Choose from these fonts: "Hind Madurai", "Montserrat", "Noto Sans JP", "Open Sans", "Roboto", or "Source Sans Pro"
+        FAVICON_IMAGE = "" // URL, or path to the image. FORMAT: "/IMAGE.png" (You can use any favicon supported file format.)
+
+        // Main Configuration
+        DESK_NAME = "EDIT ME" // What you want to name your helpdesk.
+        SYSTEMS = 1 // Amount of Help Buttons you want, this can only goes up to 10.
+        CONTACTS = 1 // Ammount of ways people can contact you, this can only go up to 5.
+        
+        // Systems Buttons || NOTE: To add more buttons duplicate SYSTEM_BUTTON_1 = "" and change the second one to SYSTEM_BUTTON_2 = "", you can only add as many as the SYSTEMS variable is set to.
+        SYSTEM_BUTTON_1 = "" // Button 1's Text
+        
+        // Contact Buttons || NOTE: To add more buttons duplicate SYSTEM_BUTTON_1 = "" and change the second one to SYSTEM_BUTTON_2 = "", you can only add as many as the SYSTEMS variable is set to.
+        CONTACT_BUTTON_1 = "" // Button 1's Text
+
+        // Status
+        AUTOMATIC_STATUS = false // Set to false if you want to update the System Status manually. (This Feature hasn't been added yet.)
+        SYSTEM_STATUS = "CHANGE_ME" // Set to Maintenance, Issues, Down, Online, if AUTOMATIC_STATUS is set to true, leave blank.     
+    </script>
+</html>
