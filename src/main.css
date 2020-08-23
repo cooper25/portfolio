@@ -1,13 +1,21 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #FFFD00;
+    background: white;
     margin: 0;
+}
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    animation: .5s fade_in_content;
+    opacity: 0%;
+}
+@keyframes fade_in_content{
+    0% {opacity: 0%; margin-top: 25px;}
+    100% {opacity: 100%; margin-top: 0px;}
 }
 ::selection {
     background-color: unset;
@@ -16,7 +24,7 @@ body {
 h1 {
     margin: 0px;
     padding: 0px;
-    font: 700 200% "PT Mono", sans-serif;
+    font: 500 200% "PT Mono", sans-serif;
 }
 h2 {
     margin: 0px;
@@ -35,14 +43,14 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 5%;
-    opacity: 85%;
+    opacity: 75%;
 }
 .social:hover {
-    opacity: 100%;
+    opacity: 65%;
 }
 .github {
-    background-image: url(/assets/github.png);
+    background-image: url(/assets/github.svg);
 }
 .email {
-    background-image: url(/assets/email.png);
+    background-image: url(/assets/email.svg);
 }
