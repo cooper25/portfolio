@@ -30,7 +30,7 @@ window.onload = function() {
 
     /* Animation */
 
-    var content = document.getElementById("ct")
+    let content = document.getElementById("ct")
     content.addEventListener("animationend", contentFadedInComplete);
     function contentFadedInComplete() {
         content.style.opacity = "100%"
