@@ -10,7 +10,7 @@ window.onload = function() {
         document.body.remove()
         alert("Please don't steal the source code.\n© Cooper Tsoris 2020")
     } else {
-        console.warn("Correct Hostname")
+        console.warn("Correct Hostname!")
     }
 
     /* Confetti */
