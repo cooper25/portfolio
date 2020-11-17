@@ -10,26 +10,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Load Javascript -->
-        <script>
-            const confettiEnabled = true;
-            const maintenance = false;
-
-            if (maintenance == true) {
-                window.location.href = "maintenance.html"
-            }
-        </script>
-        <script src="/assets/main.js"></script>
+        <script>window.location.href = "/offline"</script>
+        <meta http-equiv="refresh" content="0; URL='https://coopertsoris.dev/offline'"/>
 
         <!-- Load Styling -->
         <link id="favicon" rel="shortcut icon" type="image/png" href="/assets/favicon.png">
         <link rel="stylesheet" type="text/css" href="/assets/main.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.typekit.net/vwk5lok.css">
+ 
         <!-- Add-ons -->
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>
-        <script src="locomotive-scroll.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Alata&family=PT+Mono&display=swap" rel="stylesheet">
-
+        <script src="/assets/scripts/index.js"></script>
+ 
         <!-- Primary Meta Tags -->
         <title>Cooper Tsoris :// Developer</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -37,16 +30,16 @@
         <meta name="description" content="Cooper Tsoris, a front-end web developer/designer with over a years experience with design. I have designed plenty of websites in the past, mostly for open-source or personal projects.">
         <meta name="keywords" content="cooper, cooper tsoris, tsoris, Cooper Tsoris, Cooper, cooper dev, cooper developer, developer, dev, design, education, cooper, tsoris, web, designer, front-end, coopertsoris.dev, web developer, graphic designer, student, website, official">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv='content-language' content='en-gb'>
-        <meta name="theme-color" content="#ffd000">
-
+        <meta http-equiv='content-language' content='en-us'>
+        <meta name="theme-color" content="#000F42">
+ 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://coopertsoris.dev/">
         <meta property="og:title" content="Cooper Tsoris :// Developer">
         <meta property="og:description" content="Cooper Tsoris, a front-end web developer/designer with over a years experience with design. I have designed plenty of websites in the past, mostly for open-source or personal projects.">
         <meta property="og:image" content="https://coopertsoris.dev/assets/thumbnail.png/">
-
+ 
         <!-- Twitter -->
         <meta property="twitter:url" content="https://coopertsoris.dev/">
         <meta property="twitter:title" content="Cooper Tsoris :// Developer">
@@ -54,11 +47,16 @@
         <meta property="twitter:image" content="https://coopertsoris.dev/assets/thumbnail.png/">
     </head>
     <body>
-        <div id="ct" class="content">
-            <img src="/assets/co_logo.png" height="100"><br><br>
-            <h1>coopertsoris</h1>
-            <h2>front-end dev | web design</h2><br>
-            <a href="https://github.com/cooper25"><button class="social github"></button></a><a href="mailto:hello@coopertsoris.dev"><button class="social email"></button></a>
-        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li>•</li>
+            <li><a href="/designs">Designs</a></li>
+            <li>•</li>
+            <li><a href="/designs">Projects</a></li><br>
+            <div class="logo_fullname">
+                <br><br><img height="50" src="/assets/fullname.svg">
+            </div>
+        </ul>
+        <footer>Photo by <a href="https://unsplash.com/@notaphotographer">Kayle Kaupanger</a> on <b>Unsplash</b></footer>
     </body>
 </html>

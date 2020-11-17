@@ -1,64 +1,75 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #FFD000;
-    text-align: center;
-    margin: 0;
+    background: url(/assets/mke.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
 }
-.content {
+::selection {
+    background-color: #81d8d0;
+    color: unset;
+}
+button:focus {
+    outline: transparent;
+}
+.elements {
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: .5s fade_in_content;
-    opacity: 0%;
-}
-@keyframes fade_in_content{
-    0% {opacity: 0%; margin-top: 25px;}
-    100% {opacity: 100%; margin-top: 0px;}
-}
-::selection {
-    background-color: unset;
-    color: unset;
+    text-align: center;
 }
 h1 {
     margin: 0px;
     padding: 0px;
-    font: 500 200% "PT Mono", sans-serif;
+    font: 700 500% utopia-std-caption, serif;
+    letter-spacing: 1.5px;
 }
 h2 {
     margin: 0px;
     padding: 0px;
-    font: 100 115% "Alata", sans-serif;
+    font: 500 115% "inter", sans-serif;
 }
-.social {
-    transition: .2s;
-    outline: none;
-    border: none;
-    display: inline;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+ul {
+    word-spacing: 20px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    padding: 2%;
+    padding-left: 12.5%;
     background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 5%;
-    opacity: 75%;
+    box-sizing: border-box;
+    background-color: white;
 }
-.social:hover {
-    opacity: 65%;
+li {
+    display: inline;
 }
-.github {
-    background-image: url(/assets/github.svg);
+ul a {
+    font: 500 100% "inter", sans-serif;
+    text-decoration: none;
+    color: black;
 }
-.email {
-    background-image: url(/assets/email.svg);
-}
-#arrow {
+footer {
     position: absolute;
     bottom: 0px;
-    right: 48.75%;
-    margin-bottom: 2%;
-    opacity: 25%;
+    padding-bottom: 2%;
+    padding-left: 12.5%;
+    font: 500 100% "inter", sans-serif;
+    color: rgba(255, 255, 255, 0.61);
+}
+b {
+    font-weight: 600;
+}
+footer a {
+    transition: .2s;
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 600;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #81d8d0;
 }
