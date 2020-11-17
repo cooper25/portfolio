@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #ffd000;
+    background: #FFD000;
+    text-align: center;
     margin: 0;
 }
 .content {
@@ -53,4 +54,11 @@ h2 {
 }
 .email {
     background-image: url(/assets/email.svg);
+}
+#arrow {
+    position: absolute;
+    bottom: 0px;
+    right: 48.75%;
+    margin-bottom: 2%;
+    opacity: 25%;
 }
