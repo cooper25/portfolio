@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+::selection {
+    background: #81d8d0;
+    color: unset;
+}
+header {
+    padding: 1.15%;
+    background-color: #81d8d0;
+    font: 300 100% "inter", sans-serif;
+    text-align: center;
+}
+header a {
+    font-weight: 400;
+    color: black;
+}
+ul {
+    padding: 1.5%;
+    margin: 0px;
+    font: 500 100% "inter", sans-serif;
+    background: #FAFAFA;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.03);
+    word-spacing: 10px;
+    text-align: center;
+}
+ul a {
+    transition: .2s;
+    color: black;
+    text-decoration: none;
+}
+ul a:hover {
+    color: #81d8d0;
+}
+li {
+    display: inline;
+}

@@ -15,6 +15,16 @@ body {
 button:focus {
     outline: transparent;
 }
+header {
+    padding: .85%;
+    padding-left: 12.5%;
+    background-color: #81d8d0;
+    font: 300 100% "inter", sans-serif;
+}
+header a {
+    font-weight: 400;
+    color: black;
+}
 .elements {
     position: absolute;
     top: 50%;
@@ -35,7 +45,7 @@ h2 {
     font: 500 115% "inter", sans-serif;
 }
 ul {
-    word-spacing: 20px;
+    word-spacing: 10px;
     margin: 0px;
     position: absolute;
     width: 100%;
@@ -49,7 +59,7 @@ li {
     display: inline;
 }
 ul a {
-    font: 500 100% "inter", sans-serif;
+    font: 500 85% "inter", sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -71,5 +81,5 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: #81d8d0;
+    color: white;
 }
