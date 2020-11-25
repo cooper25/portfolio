@@ -24,6 +24,24 @@ h1 {
     font: 400 115% "Inter", sans-serif;
     white-space: nowrap;
 }
+b {
+    font-weight: 600;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    margin: 0px;
+    font: 500 100% "inter", sans-serif;
+    color: white;
+    opacity: 75%;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 .field {
     padding: 15px 20px;
     font: 400 95% "Inter", sans-serif;
@@ -33,7 +51,7 @@ h1 {
     min-width: 100%;
 }
 .login {
-    transition: .4s;
+    transition: .3s;
     padding: 15px 20px;
     color: white;
     font: 400 95% "Inter", sans-serif;
@@ -68,5 +86,8 @@ h1 {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+    footer {
+        display: none;
     }
 }
