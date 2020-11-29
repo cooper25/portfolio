@@ -52,4 +52,10 @@
             <p>⚠️<b> 404 Page not Found.</b><br>If you think this is a mistake you can email <a href="mailto:contact@coopertsoris.dev">contact@coopertsoris.dev</a>.<br><br>Sorry for the inconvenience,<br>- Cooper</p>
         </div>
     </body>
+    <script>
+        var loca = `${window.location}`
+        if(loca.includes("localhost")) {
+            window.location.href = "index.html"
+        }
+    </script>
 </html>
