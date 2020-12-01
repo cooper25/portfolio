@@ -7,10 +7,10 @@ body {
     color: unset;
 }
 input:focus {
-    outline: 0px;
+    outline: none;
 }
 button:focus {
-    outline: 0px;
+    outline: none;
 }
 .content {
     position: absolute;
